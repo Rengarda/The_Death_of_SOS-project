@@ -1,0 +1,30 @@
+@import './colors.scss';
+
+@mixin button($bg: $yellow) {
+  border-radius: 4px;
+  background: linear-gradient(181deg, #ffb548 0%, #f3af34 99.52%);
+  padding: 17px 17px 20px 17px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $main;
+  display: flex;
+  width: max-content;
+  cursor: pointer;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  transition: background 0.25s;
+  opacity: 0.9;
+}
+
+@mixin hoverYellow {
+  &:hover {
+    background: #ffb548;
+  }
+  &:active {
+    background: #805411;
+  }
+}
